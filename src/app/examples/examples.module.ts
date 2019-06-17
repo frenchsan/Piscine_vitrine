@@ -10,6 +10,7 @@ import { LandingComponent } from './landing/landing.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ExamplesComponent } from './examples.component';
+import { TarifsComponent } from 'app/components/tarifs/tarifs.component';
 
 @NgModule({
     imports: [
@@ -20,13 +21,14 @@ import { ExamplesComponent } from './examples.component';
         JwBootstrapSwitchNg2Module,
         AgmCoreModule.forRoot({
             apiKey: 'YOUR_KEY_HERE'
-        })
+        }),
     ],
     declarations: [
         LandingComponent,
         LoginComponent,
         ExamplesComponent,
-        ProfileComponent
+        ProfileComponent,
+        TarifsComponent
     ]
 })
 export class ExamplesModule { }

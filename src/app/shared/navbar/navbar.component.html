@@ -9,18 +9,17 @@
           </a>
            <div ngbDropdownMenu>
              <a class="dropdown-header">Dropdown header</a>
-             <a class="dropdown-item" href="#">Action</a>
-             <a class="dropdown-item" href="#">Another action</a>
-             <a class="dropdown-item" href="#">Something else here</a>
+             <a class="dropdown-item" href="#">Concept</a>
+             <a class="dropdown-item" href="#">L'histoire</a>
+             <a class="dropdown-item" href="#">Tarifs</a>
+             <a class="dropdown-item" href="#">Conseils pratiques</a>
              <div class="dropdown-divider"></div>
-             <a class="dropdown-item" href="#">Separated link</a>
-             <div class="dropdown-divider"></div>
-             <a class="dropdown-item" href="#">One more separated link</a>
+             <a class="dropdown-item" href="#">Réserver</a>
            </div>
          </div>
       </div>
         <div class="navbar-translate">
-            <a class="navbar-brand" [routerLink]="['/index']" placement="bottom" ngbTooltip="Designed by Invision. Coded by Creative Tim">
+            <a class="navbar-brand" [routerLink]="['/home']" placement="bottom" ngbTooltip="Designed by Invision. Coded by Creative Tim">
                 Accueil
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
@@ -44,9 +43,15 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://creativetimofficial.github.io/now-ui-kit-angular/documentation/tutorial" target="_blank">
+                    <a class="nav-link" pageScroll [pageScrollOffset]="200" [pageScrollDuration]="300" href="#tarifs">
                       <i class="now-ui-icons files_paper"></i>
                       <p>TARIFS</p>
+                    </a>
+                </li>                
+                <li class="nav-item">
+                    <a class="nav-link" pageScroll [pageScrollOffset]="200" [pageScrollDuration]="300" href="#conseils">
+                      <i class="now-ui-icons files_paper"></i>
+                      <p>CONSEILS PRATIQUES</p>
                     </a>
                 </li>                
                 <li class="nav-item">

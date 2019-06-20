@@ -9,6 +9,8 @@ import { ExamplesModule } from './examples/examples.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
 
 @NgModule({
     declarations: [
@@ -23,6 +25,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
         AppRoutingModule,
         ComponentsModule,
         ExamplesModule,
+        NgxPageScrollCoreModule,
+        NgxPageScrollModule
     ],
     providers: [],
     bootstrap: [AppComponent]

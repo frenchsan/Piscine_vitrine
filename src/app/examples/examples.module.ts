@@ -12,6 +12,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { ExamplesComponent } from './examples.component';
 import { TarifsComponent } from 'app/components/tarifs/tarifs.component';
 import { ConseilsComponent } from 'app/components/conseils/conseils.component';
+import { ConceptComponent } from 'app/components/concept/concept.component';
 
 @NgModule({
     imports: [
@@ -30,7 +31,8 @@ import { ConseilsComponent } from 'app/components/conseils/conseils.component';
         ExamplesComponent,
         ProfileComponent,
         TarifsComponent,
-        ConseilsComponent
+        ConseilsComponent,
+        ConceptComponent
     ]
 })
 export class ExamplesModule { }
